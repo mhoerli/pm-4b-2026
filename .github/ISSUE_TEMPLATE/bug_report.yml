@@ -1,0 +1,23 @@
+
+name: "Bug Report"
+description: "Erstelle einen Bug Report"
+
+body:
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: "Beschreibung"
+      description: "Beschreibe dein Problem"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: prioritaet
+    attributes:
+      label: "Priorität"
+      options:
+        - Niedrig
+        - Mittel
+        - Hoch
+    validations:
+      required: true
